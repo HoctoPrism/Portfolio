@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url('fonts/rubik/Rubik-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Rubik';
+    src: url('fonts/rubik/Rubik-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Rubik';
+    src: url('fonts/rubik/Rubik-Light.ttf') format('truetype');
+    font-weight: light;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Rubik', 'Helvetica', 'sans-serif';
+    background-color: #FEFEFE;
+}
+.img_banniere {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.459), rgba(0, 0, 0, 0.486)), url("img/surendra.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 50rem;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+.p_color{
+    background-color: #242636;
+    color: #FEFEFE;
+}
+.color_invert {
+    color: #242636;
+    background-color: #FEFEFE;
+}
+.p_paragraphe {
+    max-width: 35%;
+}
+.separator {
+    height: 1px;
+    width: 50%;
+    background-image: linear-gradient(to left, #FEFEFE, #242636,#FEFEFE);
+}
+.p_card:hover{
+    transform: scale(1.05);
+}
+.p_card {
+    transition: transform 1s ease;
+}
+.p_card a{
+    color: #FEFEFE;
+}
+.p_footer_box {
+    border-radius: 1rem;
+    background-color: #363952 !important;
+    top: -2.2rem;
+}
+.p_form {
+    max-width: 75%;
+}
+.p_card_body {
+    max-width: 75%;
+}
+.p_project{
+    padding-top: 1rem;
+}
+@media (max-width: 991.98px) {
+    .p_paragraphe {
+        max-width: 100%;
+    }
+    .p_form {
+        max-width: 95%;
+    }
+    .p_card_body {
+        max-width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .p_project{
+        padding-top: 30rem;
+    }
+}
