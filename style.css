@@ -23,6 +23,14 @@
 body {
     font-family: 'Rubik', 'Helvetica', 'sans-serif';
     background-color: #FEFEFE;
+    color: #242636;
+}
+.img {
+    max-height: 226px;
+    width: 100% !important;
+    border-radius: calc(.25rem - 1px);
+    object-fit: cover !important;
+    filter: brightness(45%) blur(3px);
 }
 .img_banniere {
     background-image: linear-gradient(rgba(0, 0, 0, 0.459), rgba(0, 0, 0, 0.486)), url("img/surendra.jpg");
@@ -30,8 +38,10 @@ body {
     background-position: center center;
     background-size: cover;
     height: 50rem;
-    border-top-left-radius: 1.5rem;
-    border-top-right-radius: 1.5rem;
+}
+.img-gallery {
+    max-height: 226px;
+    border-radius: calc(.25rem - 1px);
 }
 .p_color{
     background-color: #242636;
@@ -54,6 +64,7 @@ body {
 }
 .p_card {
     transition: transform 1s ease;
+    width: 400px;
 }
 .p_card a{
     color: #FEFEFE;

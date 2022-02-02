@@ -10,10 +10,6 @@
     <title>Maxime Lespinasse - Développeur Web</title>
 </head>
 <body>
-    <section class="container-fluid text-center py-5 p_color">
-        <h1 class="fw-bold">Développeur Web</h1>
-        <p class="fs-5 fw-light text-light mt-4">Développeur enthousiaste aux nouvelles technologies et aux nouvelles idées</p>
-    </section>
     <section class="container-fluid p_color g-0">
         <div class="img_banniere">
             <div class="d-flex flex-column align-items-center text-center py-md-5 py-3">
@@ -37,6 +33,7 @@
                             <p class="m-0 mx-2 mx-md-0">Bootstrap</p>
                             <p class="m-0 mx-2 mx-md-0">Angular</p>
                             <p class="m-0 mx-2 mx-md-0">jQuery</p>
+                            <p class="m-0 mx-2 mx-md-0">Angular Material</p>
                         </div>
                     </div>
                 </div>
@@ -72,7 +69,6 @@
                         <div class="d-flex flex-md-column flex-row">
                             <p class="m-0 mx-2 mx-md-0">Symfony</p>
                             <p class="m-0 mx-2 mx-md-0">MySQL</p>
-                            <p class="m-0 mx-2 mx-md-0">PhpMyAdmin</p>
                             <p class="m-0 mx-2 mx-md-0">Looping</p>
                         </div>
                     </div>
@@ -82,74 +78,136 @@
     </section>
     <section class="container-fluid p_project">
         <div class="row align-items-center justify-content-center d-flex mt-5 pt-5">
+            <h2 class="col-12 text-center fs-1 fw-bold mt-5 mt-md-0">La suite</h4>
+            <p class="text-center fs-5 mt-3 w-75">Maintenant que ma formation de développeur web est terminée, je poursuis mon aventure avec une formation de Concepteur Développeur d'Application :)</p>
+            <p class="text-center fs-5 mt-3 w-75">
+                Je verrai en autre : <br>
+                NodeJS, React, React Native, Redux, Java, Laravel, AWS, Firebase, ServerLess...
+            </p>
+        </div>
+    </section>
+    <section class="container-fluid p_project">
+        <div class="row align-items-center justify-content-center d-flex mt-5 pt-5">
             <h2 class="col-12 text-center fs-1 fw-bold mt-5 mt-md-0">Mes projets</h4>
             <p class="text-center fs-5 mt-3">Vous retrouverez ici quelques projets sur lesquels j'ai travaillé</p>
-            <div class="col-12 row row-cols-lg-3 row-cols-md-2 row-cols-1 d-flex align-items-center justify-content-center my-5 text-white p_card_body">
-                <div class="col d-flex align-items-center justify-content-center p-0 text-white">
-                    <a href="#">
-                        <div class="m-2 card bg-dark text-white p-0 border-0  p_card">
-                            <img src="img/josef-barton-aa-prev.jpg" class="card-img" alt="projets">
-                            <div class="card-img-overlay d-flex align-items-center justify-content-center text-center flex-column">
-                              <h5 class="card-title fs-md-3 fs-4 fw-bold">Mon Projet</h5>
-                              <p class="card-text fs-md-5 fs-6">il y aura ici une description du projet.</p>
-                            </div>
+            <div class="col-12 row row-cols-lg-3 row-cols-md-2 row-cols-1 d-flex align-items-center justify-content-center my-5 p_card_body">
+                <!-- Card replay -->
+                <div class="col d-flex align-items-center justify-content-center p-0  text-white" data-bs-toggle="modal" data-bs-target="#replay">
+                    <div class="m-2 card bg-dark p-0 border-0 p_card">
+                        <img src="img/replay/replay2.png" class="img" alt="image replay">
+                        <div class="card-img-overlay d-flex align-items-center justify-content-center text-center flex-column">
+                            <h5 class="card-title fs-md-3 fs-4 fw-bold mt-2">Replay</h5>
+                            <p class="card-text fs-md-5 fs-6">Mettre en place un site repertoriant les vidéos de cours d'un formateur, afin de contrôler la diffusion de ces dernières</p>
+                            <p class="card-text fs-md-5 fs-6 fst-italic justify-content-end mt-auto">Symfony 5 - Angular 12 - Angular Material</p>
                         </div>
-                    </a>
+                    </div>
                 </div>
-                <div class="col d-flex align-items-center justify-content-center p-0 text-white">
-                    <a href="#">
-                        <div class="m-2 card bg-dark text-white p-0 border-0  p_card">
-                            <img src="img/josef-barton-aa-prev.jpg" class="card-img" alt="projets">
-                            <div class="card-img-overlay d-flex align-items-center justify-content-center text-center flex-column">
-                              <h5 class="card-title fs-md-3 fs-4 fw-bold">Mon Projet</h5>
-                              <p class="card-text fs-md-5 fs-6">il y aura ici une description du projet.</p>
+                <!-- Modal replay -->
+                <div class="modal fade" id="replay" tabindex="-1" aria-labelledby="replayLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl text-center fs-5">
+                        <div class="modal-content m-5">
+                            <div class="modal-body mx-5">
+                                <div class="fw-bold fs-3 mb-3">Replay</div>
+                                <p>Replay est un site qui a été fait from scratch, j'ai travaillé sur cette app lors de mon stage, mon maitre de stage, qui est aussi formateur est amené à enregistrer ses cours, il les diffuser ensuite à ses apprenants sur différents réseaux. Le soucis c'est qu'il n'y avait aucun contrôle sur la diffusion, c'est pour cela qu'il a été demandé de mettre en place un site permettant de mettre toutes les vidéos et de gérer les accès à ces dernières.</p>
+                                <p>Liste des tâches notables :</p>
+                                <ul class="text-start">
+                                    <li>Maquetter l'application</li>
+                                    <li>Mettre en place une base de donnée</li>
+                                    <li>Mettre en place un CRUD pour les utilisateurs, vidéos, catégories, tags...</li>
+                                    <li>Upload des vidéos sur un serveur Amazon S3</li>
+                                    <li>Authentification JWT</li>
+                                    <li>Liste à regarder plus tard</li>
+                                    <li>Création du thème de l'application (sombre/clair)</li>
+                                </ul>
+                                <div class="fw-bold fs-3 my-5">Gallerie</div>
+                                <div class="d-flex justify-content-evenly align-items-center mb-5">
+                                    <a href="img/replay/replay1.png" data-toggle="lightbox" data-gallery="replay-gallery">
+                                        <img src="img/replay/replay1.png" class="img-gallery" alt="replay1">
+                                    </a>
+                                    <a href="img/replay/replay2.png" data-toggle="lightbox" data-gallery="replay-gallery">
+                                        <img src="img/replay/replay2.png" class="img-gallery" alt="replay2">
+                                    </a>                                    
+                                    <a href="img/replay/replay3.png" data-toggle="lightbox" data-gallery="replay-gallery">
+                                        <img src="img/replay/replay3.png" class="img-gallery" alt="replay3">
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-                <div class="col d-flex align-items-center justify-content-center p-0 text-white">
-                    <a href="#">
-                        <div class="m-2 card bg-dark text-white p-0 border-0  p_card">
-                            <img src="img/josef-barton-aa-prev.jpg" class="card-img" alt="projets">
-                            <div class="card-img-overlay d-flex align-items-center justify-content-center text-center flex-column">
-                              <h5 class="card-title fs-md-3 fs-4 fw-bold">Mon Projet</h5>
-                              <p class="card-text fs-md-5 fs-6">il y aura ici une description du projet.</p>
-                            </div>
+                <!-- Card Laser -->
+                <div class="col d-flex align-items-center justify-content-center p-0  text-white" data-bs-toggle="modal" data-bs-target="#laser">
+                    <div class="m-2 card bg-dark text-white p-0 border-0 p_card">
+                        <img src="img/code.jpg" class="img" alt="image laser">
+                        <div class="card-img-overlay d-flex align-items-center justify-content-center text-center flex-column">
+                            <h5 class="card-title fs-md-3 fs-4 fw-bold mt-2">Lasergame Evolution</h5>
+                            <p class="card-text fs-md-5 fs-6">Ajout de fonctionnalités à un site de gestion interne à l'entreprise déjà existants suite à une migration du projet</p>
+                            <p class="card-text fs-md-5 fs-6 fst-italic mt-auto">Symfony 5 - Bootstrap 3</p>
                         </div>
-                    </a>
+                    </div>
                 </div>
-                <div class="col d-flex align-items-center justify-content-center text-white p-0">
-                    <a href="#">
-                        <div class="m-2 card bg-dark text-white p-0 border-0 p_card">
-                            <img src="img/josef-barton-aa-prev.jpg" class="card-img" alt="projets">
-                            <div class="card-img-overlay d-flex align-items-center justify-content-center text-center flex-column">
-                              <h5 class="card-title fs-md-3 fs-4 fw-bold">Mon Projet</h5>
-                              <p class="card-text fs-md-5 fs-6">il y aura ici une description du projet.</p>
+                <!-- Modal Laser -->
+                <div class="modal fade" id="laser" tabindex="-1" aria-labelledby="laserLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl text-center fs-5">
+                        <div class="modal-content m-5">
+                            <div class="modal-body mx-5">
+                                <div class="fw-bold fs-3 mb-3">Lasergame Evolution</div>
+                                <p>Le projet Lasergame Evolution consiste en un site de gestion, interne à l'entreprise, permettant de gérer les clients, les reservations, le planning... le site a été migré de Symfony 2 à Symfony 5 avant mon arrivé dans mon stage.</p>
+                                <p>Ici il a été question d'ajouter des fonctionnalités au site déjà existant comme :</p>
+                                <ul>
+                                    <li>Générer un PDF grâce à un template twig pour les devis</li>
+                                    <li>Mettre en place un service mail pour envoyer ce devis au client</li>
+                                    <li>Migration des données de l'ancien modèle au nouveau modèle</li>
+                                </ul>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-                <div class="col d-flex align-items-center justify-content-center text-white p-0">
-                    <a href="#">
-                        <div class="m-2 card bg-dark text-white p-0 border-0 p_card">
-                            <img src="img/josef-barton-aa-prev.jpg" class="card-img" alt="projets">
-                            <div class="card-img-overlay d-flex align-items-center justify-content-center text-center flex-column">
-                              <h5 class="card-title fs-md-3 fs-4 fw-bold">Mon Projet</h5>
-                              <p class="card-text fs-md-5 fs-6">il y aura ici une description du projet.</p>
-                            </div>
+                <!-- Card nimesalerie -->
+                <div class="col d-flex align-items-center justify-content-center p-0  text-white" data-bs-toggle="modal" data-bs-target="#nimesalerie">
+                    <div class="m-2 card bg-dark p-0 border-0 p_card">
+                        <img src="img/nimesalerie/accueil.png" class="img" alt="image nimesalerie">
+                        <div class="card-img-overlay d-flex align-items-center justify-content-center text-center flex-column">
+                            <h5 class="card-title fs-md-3 fs-4 fw-bold mt-2">La Nimes'alerie</h5>
+                            <p class="card-text fs-md-5 fs-6">Créer un site e-commerce pour une animalerie suivant un cahier des charges donné, comprenant aussi un dashboard sous Angular</p>
+                            <p class="card-text fs-md-5 fs-6 fst-italic mt-auto">Symfony 5 - Bootstrap 5 - Angular 12</p>
                         </div>
-                    </a>
+                    </div>
                 </div>
-                <div class="col d-flex align-items-center justify-content-center text-white p-0">
-                    <a href="#">
-                        <div class="m-2 card bg-dark text-white p-0 border-0 p_card">
-                            <img src="img/josef-barton-aa-prev.jpg" class="card-img" alt="projets">
-                            <div class="card-img-overlay d-flex align-items-center justify-content-center text-center flex-column">
-                              <h5 class="card-title fs-md-3 fs-4 fw-bold">Mon Projet</h5>
-                              <p class="card-text fs-md-5 fs-6">il y aura ici une description du projet.</p>
+                <!-- Modal nimesalerie -->
+                <div class="modal fade" id="nimesalerie" tabindex="-1" aria-labelledby="nimesalerieLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl text-center fs-5">
+                        <div class="modal-content m-5">
+                            <div class="modal-body mx-5">
+                                <div class="fw-bold fs-3 mb-3">La Nimes'alerie</div>
+                                <p>Ce projet a été demandé par mon organisme de formation, elle devait être developpée au fur et à mesure de l'avancement de la formation, elle regroupe des connaissances acquises lors de cette dernière.</p>
+                                <p>Il s'agit d'un projet de site pour une animalerie fictive, il était demandé de réaliser une app sous Symfony (templating inclus) et un dashboard sous Angular. Une app en deux parties, une partie admin, permettant une gestion complète des produits, clients, commandes... et une partie client, permettant de consulter les produits, de les ajouter au panier...</p>
+                                <p>Liste des tâches notables :</p>
+                                <ul class="text-start">
+                                    <li>Maquetter l'application</li>
+                                    <li>Mettre en place une base de donnée</li>
+                                    <li>Mettre en place un CRUD pour les utilisateurs, produits, commandes, panier...</li>
+                                    <li>Tunnel de commande</li>
+                                    <li>Dashboard sous Angular (non terminé)</li>
+                                </ul>
+                                <div class="fw-bold fs-3 my-5">Gallerie</div>
+                                <div class="d-flex justify-content-evenly align-items-center mb-5">
+                                    <a href="img/nimesalerie/Accueil.png" data-toggle="lightbox" data-gallery="nimesalerie-gallery">
+                                        <img src="img/nimesalerie/Accueil.png" class="img-gallery" alt="nimesalerie - accueil">
+                                    </a>
+                                    <a href="img/nimesalerie/Dashboard.png" data-toggle="lightbox" data-gallery="nimesalerie-gallery">
+                                        <img src="img/nimesalerie/Dashboard.png" class="img-gallery" alt="nimesalerie - dashboard">
+                                    </a>                                    
+                                    <a href="img/nimesalerie/Panier.png" data-toggle="lightbox" data-gallery="nimesalerie-gallery">
+                                        <img src="img/nimesalerie/Panier.png" class="img-gallery" alt="nimesalerie - panier">
+                                    </a>
+                                    <a href="img/nimesalerie/produit.png" data-toggle="lightbox" data-gallery="nimesalerie-gallery">
+                                        <img src="img/nimesalerie/produit.png" class="img-gallery" alt="nimesalerie - produit">
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -159,26 +217,12 @@
             <h2 class="fw-bold fs-md-4  text-center">Retrouvez moi et contactez moi</h2>
         </div>
         <div class="col-12 d-flex align-items-center justify-content-center my-md-4 my-0 g-0">
-            <a href="#" target="_blank"><i class="bi bi-twitter fs-1 text-white mx-2"></i></a>
             <a href="https://github.com/HoctoPrism" target="_blank"><i class="bi bi-github fs-1 text-white mx-2"></i></a>
+            <a href="https://www.linkedin.com/in/maxime-lespinasse/" target="_blank"><i class="bi bi-linkedin fs-1 text-white mx-2"></i></a>
         </div>
-        <form class="row p_form d-flex align-items-center justify-content-center">
-            <div class="mb-3 col-md-6 col-12">
-                <label for="exampleFormControlInput2" class="form-label">Nom</label>
-                <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Nom">
-            </div>
-            <div class="mb-3 col-md-6 col-12">
-                <label for="exampleFormControlInput1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nom@example.com">
-            </div>
-            <div class="mb-3 col-12">
-                <label for="exampleFormControlTextarea1" class="form-label">Votre message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
-            </div>
-            <input type="submit" class="btn btn-danger w-25 my-4"></input>
-        </form>
         <div class="col-12 fw-light text-center g-0">©Copyright Maxime Lespinasse</div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.7.8/dist/index.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>
